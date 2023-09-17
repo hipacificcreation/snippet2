@@ -1,0 +1,102 @@
+/** 
+Hello Future Developer Thanks for Using w3pupil.com, 
+Check our website Regularly For New Snippets Post.
+
+Share & Support us
+**/
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+:root{
+    --bg:#ffffff;
+}
+body{
+    font-family: 'Mukta', sans-serif;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+.container{
+    min-height:100vh;
+    max-height:auto;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+}
+.sub-container{
+    background-color: var(--bg);
+    border-radius: 5px;
+    text-align: center;
+    width:80vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sub-container table {
+    width:100%;
+    border-collapse: collapse;
+}
+.sub-container  th{
+    background-color: #36304c;
+    color: var(--bg);
+    padding: 20px;
+}
+.sub-container  td{
+    padding: 8px;
+}
+.sub-container tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+.sub-container tr:hover {
+    background-color: hsla(106, 85%, 79%, 0.5);
+    transition:.5s;
+}
+@media only screen and (max-width: 1024px){
+    .sub-container{
+        width:95vw;
+    }
+}
+@media only screen and (max-width: 630px){
+    .sub-container  th{
+        display: none;
+    }
+    .sub-container  td{
+        display:grid;
+        grid-template-columns: 15ch auto;
+        text-align: left;
+        margin:5px;
+        padding:.5px;
+    }
+    .sub-container  td:first-child{
+        padding-top: 5px;
+    }
+    .sub-container  td:last-child{
+        padding-bottom: 5px;
+    }
+    .sub-container  td:nth-of-type(1)::before{
+        content: "DATE" " :";
+    }
+    .sub-container  td:nth-of-type(2)::before{
+        content: "ORDER ID" " :";
+    }
+    .sub-container  td:nth-of-type(3)::before{
+        content: "NAME" " :";
+    }
+    .sub-container  td:nth-of-type(4)::before{
+        content: "PRICE" " :";
+    }
+    .sub-container  td:nth-of-type(5)::before{
+        content: "QUANTITY" " :";
+    }
+    .sub-container  td:nth-of-type(6)::before{
+        content: "TOTAL" " :";
+    }
+}
+.credit a {
+    text-decoration: none;
+    color: #121212;
+    font-weight: 800;
+  }
+  
+  .credit {
+      color: #121212;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+  }
+     
